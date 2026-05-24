@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Book a Botswana safari tour or contact Adventures Africa. Fill out our booking form and our team will get back to you within 24 hours."/>
+  <title>Contact & Book a Tour | Adventures Africa</title>
+  <link rel="icon" href="photos/logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="photos/logo.png" alt="Adventures Africa" class="site-logo">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta active">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('photos/pexels-yvonne-maina-2151780742-35074957.jpg');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content container-custom">
+      <span class="section-badge">Get in Touch</span>
+      <h1>Book Your Safari</h1>
+      <p>Fill out the form below and our safari experts will contact you within 24 hours to confirm your adventure.</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb-custom">
+          <li><a href="index.html">Home</a></li>
+          <li><i class="bi bi-chevron-right"></i></li>
+          <li>Contact</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section-padding">
+    <div class="container-custom">
+      <div class="row g-5">
+
+        <!-- BOOKING FORM -->
+        <div class="col-lg-8 ">
+          <div class="contact-form-card">
+            <div class="form-card-header">
+              <h2>Book a Tour / Send Enquiry</h2>
+              <p>All fields marked with <span class="text-gold">*</span> are required. We will respond within 24 hours.</p>
+            </div>
+
+            <form id="bookingForm" novalidate>
+
+              <div class="row g-3">
+                <!-- Full Name -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="fullName" class="form-label">Full Name <span class="text-gold">*</span></label>
+                    <div class="input-wrap">
+                      <i class="bi bi-person-fill input-icon"></i>
+                      <input type="text" id="fullName" name="fullName" class="form-control-custom"
+                        placeholder="e.g. Tumelo Kgosi" required minlength="3"
+                        aria-required="true" aria-describedby="fullNameError"/>
+                    </div>
+                    <div class="invalid-feedback" id="fullNameError">Please enter your full name (at least 3 characters).</div>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email Address <span class="text-gold">*</span></label>
+                    <div class="input-wrap">
+                      <i class="bi bi-envelope-fill input-icon"></i>
+                      <input type="email" id="email" name="email" class="form-control-custom"
+                        placeholder="e.g. tumelo@email.com" required
+                        aria-required="true" aria-describedby="emailError"/>
+                    </div>
+                    <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number <span class="text-gold">*</span></label>
+                    <div class="input-wrap">
+                      <i class="bi bi-telephone-fill input-icon"></i>
+                      <input type="tel" id="phone" name="phone" class="form-control-custom"
+                        placeholder="e.g. +267 71 234 567" required
+                        pattern="[\+]?[0-9\s\-]{7,15}"
+                        aria-required="true" aria-describedby="phoneError"/>
+                    </div>
+                    <div class="invalid-feedback" id="phoneError">Please enter a valid phone number.</div>
+                  </div>
+                </div>
+
+                <!-- Nationality -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="nationality" class="form-label">Country / Nationality <span class="text-gold">*</span></label>
+                    <div class="input-wrap">
+                      <i class="bi bi-globe input-icon"></i>
+                      <input type="text" id="nationality" name="nationality" class="form-control-custom"
+                        placeholder="e.g. Botswana" required
+                        aria-required="true" aria-describedby="nationalityError"/>
+                    </div>
+                    <div class="invalid-feedback" id="nationalityError">Please enter your country.</div>
+                  </div>
+                </div>
+
+                <!-- Tour Package -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="tourPackage" class="form-label">Tour Package <span class="text-gold">*</span></label>
+                    <div class="input-wrap">
+                      <i class="bi bi-map-fill input-icon"></i>
+                      <select id="tourPackage" name="tourPackage" class="form-control-custom" required
+                        aria-required="true" aria-describedby="tourPackageError">
+                        <option value="">-- Select a Package --</option>
+                        <option value="bush-starter">Bush Starter Safari (3 Days – $450/pp)</option>
+                        <option value="classic">Classic Botswana Safari (5 Days – $850/pp)</option>
+                        <option value="premium">Ultimate Botswana Escape (7 Days – $1,499/pp)</option>
+                        <option value="custom">Custom / Private Safari</option>
+                        <option value="enquiry">General Enquiry</option>
+                      </select>
+                    </div>
+                    <div class="invalid-feedback" id="tourPackageError">Please select a tour package.</div>
+                  </div>
+                </div>
+
+                <!-- Group Size -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="groupSize" class="form-label">Group Size <span class="text-gold">*</span></label>
+                    <div class="input-wrap">
+                      <i class="bi bi-people-fill input-icon"></i>
+                      <select id="groupSize" name="groupSize" class="form-control-custom" required
+                        aria-required="true" aria-describedby="groupSizeError">
+                        <option value="">-- Select Group Size --</option>
+                        <option value="1">Solo Traveller (1 person)</option>
+                        <option value="2">Couple (2 people)</option>
+                        <option value="3-5">Small Group (3–5 people)</option>
+                        <option value="6-10">Medium Group (6–10 people)</option>
+                        <option value="10+">Large Group (10+ people)</option>
+                      </select>
+                    </div>
+                    <div class="invalid-feedback" id="groupSizeError">Please select your group size.</div>
+                  </div>
+                </div>
+
+                <!-- Travel Date From -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="dateFrom" class="form-label">Arrival Date <span class="text-gold">*</span></label>
+                    <div class="input-wrap">
+                      <i class="bi bi-calendar-event-fill input-icon"></i>
+                      <input type="date" id="dateFrom" name="dateFrom" class="form-control-custom" required
+                        aria-required="true" aria-describedby="dateFromError"/>
+                    </div>
+                    <div class="invalid-feedback" id="dateFromError">Please select your arrival date.</div>
+                  </div>
+                </div>
+
+                <!-- Travel Date To -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="dateTo" class="form-label">Departure Date <span class="text-gold">*</span></label>
+                    <div class="input-wrap">
+                      <i class="bi bi-calendar-check-fill input-icon"></i>
+                      <input type="date" id="dateTo" name="dateTo" class="form-control-custom" required
+                        aria-required="true" aria-describedby="dateToError"/>
+                    </div>
+                    <div class="invalid-feedback" id="dateToError">Please select your departure date.</div>
+                  </div>
+                </div>
+
+                <!-- Special Requirements -->
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message" class="form-label">Message / Special Requirements</label>
+                    <div class="input-wrap textarea-wrap">
+                      <i class="bi bi-chat-text-fill input-icon"></i>
+                      <textarea id="message" name="message" class="form-control-custom"
+                        rows="5" placeholder="Tell us about any special requirements, dietary needs, accessibility needs, or questions you have..."></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- How did you hear -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="hearAbout" class="form-label">How did you hear about us?</label>
+                    <div class="input-wrap">
+                      <i class="bi bi-megaphone-fill input-icon"></i>
+                      <select id="hearAbout" name="hearAbout" class="form-control-custom">
+                        <option value="">-- Select an option --</option>
+                        <option value="google">Google Search</option>
+                        <option value="social">Social Media</option>
+                        <option value="friend">Friend / Family</option>
+                        <option value="travel-agent">Travel Agent</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-6 d-flex align-items-end">
+                  <div class="form-group">
+                    <label class="checkbox-label">
+                      <input type="checkbox" id="newsletter" name="newsletter" value="yes"/>
+                      <span>Subscribe to our newsletter for travel tips and offers</span>
+                    </label>
+                    <label class="checkbox-label mt-2">
+                      <input type="checkbox" id="agree" name="agree" required/>
+                      <span>I agree to the <a href="#" class="text-gold">Terms & Conditions</a> <span class="text-gold">*</span></span>
+                    </label>
+                    <div class="invalid-feedback" id="agreeError">You must agree to the terms to proceed.</div>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12">
+                  <button type="submit" id="submitBtn" class="btn-primary-custom btn-green w-100 justify-content-center">
+                    <i class="bi bi-send-fill"></i> Send Booking Request
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+            <!-- Success Message -->
+            <div id="successMsg" class="success-message d-none">
+              <i class="bi bi-check-circle-fill"></i>
+              <h3>Booking Request Sent!</h3>
+              <p>Thank you! Our team will contact you within 24 hours to confirm your Botswana safari adventure.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="col-lg-4 ">
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>Reach us directly — we are always happy to help plan your perfect safari.</p>
+
+            <div class="contact-info-items">
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <strong>Our Office</strong>
+                  <span>Plot 5432, Main Mall<br/>Gaborone, Botswana</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <strong>Call Us</strong>
+                  <span>+267 395 0000<br/>+267 71 000 111</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <strong>Email Us</strong>
+                  <span>info@visitbotswana.co.bw<br/>bookings@visitbotswana.co.bw</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <strong>Office Hours</strong>
+                  <span>Mon – Fri: 8am – 6pm<br/>Sat: 9am – 1pm</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <p>Follow our adventures:</p>
+              <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="best-time-card">
+              <h5><i class="bi bi-sun-fill text-gold"></i> Best Time to Visit</h5>
+              <div class="months-grid">
+                <span class="month bad">Jan</span><span class="month bad">Feb</span><span class="month ok">Mar</span>
+                <span class="month ok">Apr</span><span class="month best">May</span><span class="month best">Jun</span>
+                <span class="month best">Jul</span><span class="month best">Aug</span><span class="month best">Sep</span>
+                <span class="month best">Oct</span><span class="month ok">Nov</span><span class="month bad">Dec</span>
+              </div>
+              <div class="month-legend">
+                <span><span class="month best sm">■</span> Peak Season</span>
+                <span><span class="month ok sm">■</span> Good</span>
+                <span><span class="month bad sm">■</span> Off-Season</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917774.2891736694!2d25.427583!3d-22.328474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfd42d10f9023d%3A0xf7d5d8af24e3803f!2sGaborone%2C%20Botswana!5e0!3m2!1sen!2s!4v1715000000000"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" title="Adventures Africa Office Location">
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <div class="nav-logo mb-3">
+              <img src="photos/logo.png" alt="Adventures Africa" class="site-logo">
+            </div>
+            <p>Your gateway to Botswana's extraordinary wildlife, landscapes, and cultural heritage.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-heading">Top Destinations</h5>
+          <ul class="footer-links">
+            <li><a href="destinations.html">Okavango Delta</a></li>
+            <li><a href="destinations.html">Chobe National Park</a></li>
+            <li><a href="destinations.html">Makgadikgadi Pans</a></li>
+            <li><a href="destinations.html">Moremi Game Reserve</a></li>
+            <li><a href="destinations.html">Central Kalahari</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-heading">Contact Us</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt-fill"></i> Plot 5432, Main Mall, Gaborone, Botswana</li>
+            <li><i class="bi bi-telephone-fill"></i> +267 395 0000</li>
+            <li><i class="bi bi-envelope-fill"></i> info@visitbotswana.co.bw</li>
+            <li><i class="bi bi-clock-fill"></i> Mon–Fri: 8am – 6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Adventures Africa. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Adventures Africa – Discover Africa's last great wilderness. Safari tours, wildlife destinations, and authentic African experiences." />
+  <title>Adventures Africa | Discover Africa's Last Great Wilderness</title>
+  <link rel="icon" href="photos/logo.png" type="image/png">
+  <!-- Performance Optimizations -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preload" href="photos/felix-m-dorn-NRQZ2EIzF2w-unsplash.jpg" as="image">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="photos/logo.png" alt="Adventures Africa" class="site-logo" fetchpriority="high">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('photos/felix-m-dorn-NRQZ2EIzF2w-unsplash.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container-custom">
+      <h1 class="hero-title">Discover the <br><span class="text-gold">Heart of Africa</span></h1>
+      <p class="hero-subtitle">Explore Botswana's untouched wilderness — from the lush Okavango Delta to the vast
+        Kalahari Desert. Extraordinary wildlife. Authentic experiences.</p>
+      <div class="hero-buttons">
+        <a href="tours.html" class="btn-primary-custom">Explore Tours <i class="bi bi-arrow-right"></i></a>
+        <a href="destinations.html" class="btn-outline-custom">View Destinations <i class="bi bi-map"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+
+  <!-- FEATURED DESTINATIONS -->
+  <section class="section-padding" id="destinations">
+    <div class="container-custom">
+      <div class="section-header ">
+        <span class="section-badge">Top Destinations</span>
+        <h2 class="section-title">Explore Botswana's Wonders</h2>
+        <p class="section-subtitle">From pristine wetlands to ancient salt pans — every corner of Botswana tells a
+          story.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 ">
+          <div class="dest-card">
+            <div class="dest-card-img" style="background-image: url('photos/ed-wingate-JUYMh-1k4yw-unsplash.jpg');">
+              <span class="dest-badge">Must Visit</span>
+            </div>
+            <div class="dest-card-body">
+              <h3>Okavango Delta</h3>
+              <p>The world's largest inland delta — a UNESCO World Heritage Site teeming with wildlife.</p>
+              <a href="destinations.html" class="card-link">Explore <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ">
+          <div class="dest-card">
+            <div class="dest-card-img" style="background-image: url('photos/ed-wingate-xG-gaNxYjFE-unsplash.jpg');">
+              <span class="dest-badge">Wildlife Haven</span>
+            </div>
+            <div class="dest-card-body">
+              <h3>Chobe National Park</h3>
+              <p>Home to Africa's largest elephant population. Iconic river safaris and big game viewing.</p>
+              <a href="destinations.html" class="card-link">Explore <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ">
+          <div class="dest-card">
+            <div class="dest-card-img" style="background-image: url('photos/ed-wingate-xegy8TBmpdk-unsplash.jpg');">
+              <span class="dest-badge">Unique Landscape</span>
+            </div>
+            <div class="dest-card-body">
+              <h3>Makgadikgadi Pans</h3>
+              <p>One of the world's largest salt flats — stargazing like nowhere else on Earth.</p>
+              <a href="destinations.html" class="card-link">Explore <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ">
+          <div class="dest-card">
+            <div class="dest-card-img" style="background-image: url('photos/ed-wingate-ymEHe4XqLQo-unsplash.jpg');">
+              <span class="dest-badge">Remote Safari</span>
+            </div>
+            <div class="dest-card-body">
+              <h3>Moremi Game Reserve</h3>
+              <p>Botswana's first wildlife reserve. Rich biodiversity within the Okavango ecosystem.</p>
+              <a href="destinations.html" class="card-link">Explore <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="destinations.html" class="btn-primary-custom btn-green">View All Destinations <i
+            class="bi bi-map-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-section section-padding">
+    <div class="container-custom">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 ">
+          <div class="why-img-wrap">
+            <img src="photos/wynand-uys-4ZCA3xukIso-unsplash.jpg" alt="Safari experience in Botswana" class="why-img" />
+            <div class="why-badge-float">
+              <i class="bi bi-star-fill"></i>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Customer Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <span class="section-badge">Why Choose Us</span>
+          <h2 class="section-title mt-2">Your Trusted Botswana Safari Partner</h2>
+          <p class="mb-4">With over 15 years of experience, we craft unforgettable journeys into Botswana's pristine
+            wilderness while supporting local communities and conservation.</p>
+          <div class="why-features">
+            <div class="why-feature">
+              <div class="why-icon"><i class="bi bi-shield-fill-check"></i></div>
+              <div>
+                <h5>Safety First</h5>
+                <p>Licensed, experienced guides & fully insured tours</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon"><i class="bi bi-tree-fill"></i></div>
+              <div>
+                <h5>Eco-Friendly</h5>
+                <p>Sustainable tourism that protects Botswana's wildlife</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon"><i class="bi bi-people-fill"></i></div>
+              <div>
+                <h5>Expert Guides</h5>
+                <p>Local, certified guides with deep wildlife knowledge</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-icon"><i class="bi bi-camera-fill"></i></div>
+              <div>
+                <h5>Best Moments</h5>
+                <p>Photography tips & prime game-viewing spots guaranteed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY PREVIEW -->
+  <section class="section-padding bg-cream">
+    <div class="container-custom">
+      <div class="section-header ">
+        <span class="section-badge">Gallery</span>
+        <h2 class="section-title">A Glimpse of Botswana</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item tall" style="background-image: url('photos/pexels-skelm-3284299.jpg');">
+          <div class="gallery-overlay"><span>Wildlife</span></div>
+        </div>
+        <div class="gallery-item" style="background-image: url('photos/pexels-keeganjchecks-16444270.jpg');">
+          <div class="gallery-overlay"><span>Safari</span></div>
+        </div>
+        <div class="gallery-item" style="background-image: url('photos/pexels-fatih-turan-63325184-19861531.jpg');">
+          <div class="gallery-overlay"><span>Landscape</span></div>
+        </div>
+        <div class="gallery-item tall" style="background-image: url('photos/pexels-reto-wiezel-3245195-18611231.jpg');">
+          <div class="gallery-overlay"><span>Nature</span></div>
+        </div>
+        <div class="gallery-item" style="background-image: url('photos/pexels-youngafrikanna-20852883.jpg');">
+          <div class="gallery-overlay"><span>Culture</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-section" style="background-image: url('photos/pexels-yvonne-maina-2151780742-35074957.jpg');">
+    <div class="cta-overlay"></div>
+    <div class="container-custom cta-content ">
+      <h2>Ready for Your African Adventure?</h2>
+      <p>Book your dream Botswana safari today. Limited spots available — secure yours now!</p>
+      <a href="contact.html" class="btn-primary-custom">Book a Tour Now <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-custom">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <div class="nav-logo mb-3">
+              <img src="photos/logo.png" alt="Adventures Africa" class="site-logo" loading="lazy">
+            </div>
+            <p>Your gateway to Botswana's extraordinary wildlife, landscapes, and cultural heritage. Sustainable tourism
+              for a better tomorrow.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="footer-heading">Top Destinations</h5>
+          <ul class="footer-links">
+            <li><a href="destinations.html">Okavango Delta</a></li>
+            <li><a href="destinations.html">Chobe National Park</a></li>
+            <li><a href="destinations.html">Makgadikgadi Pans</a></li>
+            <li><a href="destinations.html">Moremi Game Reserve</a></li>
+            <li><a href="destinations.html">Central Kalahari</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-heading">Contact Us</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt-fill"></i> Plot 5432, Main Mall, Gaborone, Botswana</li>
+            <li><i class="bi bi-telephone-fill"></i> +267 395 0000</li>
+            <li><i class="bi bi-envelope-fill"></i> info@visitbotswana.co.bw</li>
+            <li><i class="bi bi-clock-fill"></i> Mon–Fri: 8am – 6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Adventures Africa. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
